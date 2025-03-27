@@ -1,0 +1,38 @@
+.custom-wrapper {
+  height: 31px;
+  border-color: hsl(0, 0%, 80%);
+  padding: 0px 8px;
+}
+
+.custom-wrapper::placeholder {
+  color: hsl(0, 0%, 50%);
+}
+
+.react-datepicker-wrapper {
+  display: block;
+  .react-datepicker__close-icon {
+    padding: 0px 10px;
+  }
+  .react-datepicker__close-icon::after {
+    background-color: transparent;
+    color: #bbb;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
+
+.react-datepicker-wrapper:focus-within .react-datepicker__close-icon::after {
+  color: #666;
+}
+
+.react-datepicker-popper {
+  .react-datepicker__triangle {
+    display: none;
+  }
+
+  .react-datepicker__day--outside-month {
+    color: #ccc;
+    pointer-events: none;
+  }
+}

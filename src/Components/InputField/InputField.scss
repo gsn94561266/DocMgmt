@@ -1,0 +1,28 @@
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  .custom-wrapper {
+    height: 31px;
+    border-color: hsl(0, 0%, 80%);
+    padding: 0px 8px;
+  }
+
+  .custom-wrapper::placeholder {
+    color: hsl(0, 0%, 50%);
+  }
+
+  .clear-btn {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    background: transparent;
+    border: none;
+    cursor: default;
+    color: #bbb;
+  }
+
+  .clear-btn:hover {
+    color: #666;
+  }
+}

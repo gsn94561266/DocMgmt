@@ -1,0 +1,154 @@
+// $primary: #2c7be5;
+$primary: #2684ff;
+$secondary: #748194;
+$success: #00d27a;
+$info: #27bcfd;
+$warning: #f5803e;
+$danger: #e63757;
+$light: #f9fafd;
+$dark: #0b1727;
+
+$border-radius: 0.25rem;
+$border-radius-sm: 0.25rem;
+$modal-content-border-radius: 0.25rem;
+
+$font-size-7: 0.875rem;
+$font-size-8: 0.8rem;
+$font-size-9: 0.725rem;
+
+$custom-box-shadow:
+  0 7px 14px 0 rgba(65, 69, 88, 0.1),
+  0 3px 6px 0 rgba(0, 0, 0, 0.07);
+
+@import 'bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family:
+    'Open Sans',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  background: #edf2f9;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:
+    'Poppins',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+}
+
+label {
+  font-size: $font-size-7;
+  color: $secondary;
+}
+
+.roboto-condensed {
+  font-family: 'Roboto Condensed', serif;
+}
+
+.fs-7 {
+  font-size: $font-size-7;
+}
+
+.fs-8 {
+  font-size: $font-size-8;
+}
+
+.fs-9 {
+  font-size: $font-size-9;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.06rem $primary;
+  border-color: $primary;
+}
+
+.form-select:focus {
+  box-shadow: 0 0 0 0.06rem $primary;
+  border-color: $primary;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: $custom-box-shadow;
+}
+
+.btn.active {
+  background-color: #ddd;
+  font-weight: bold;
+  color: #094067;
+}
+
+.card {
+  border: none;
+  box-shadow: $custom-box-shadow;
+  .card-header {
+    border: none;
+  }
+}
+
+.modal-content {
+  border: none;
+  box-shadow: $custom-box-shadow;
+  .modal-header {
+    border: none;
+  }
+  .modal-footer {
+    border: none;
+  }
+}
+
+.custom-box-shadow {
+  box-shadow: $custom-box-shadow;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-default {
+  cursor: default;
+}
